@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagDani IPV4 192.168.0.5</title>
+    <link rel="icon" href="file.jpeg" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: #000;
+            color: #0F0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+            margin: 0; /* Removendo margens padrão */
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-bottom: 5px;
+        }
+
+        .images-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .image-group {
+            margin: 20px;
+        }
+
+        .corner-image {
+            width: 300px; /* Aumentando o tamanho das imagens */
+            margin: 10px;
+        }
+
+        iframe {
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>VOCE FOI TROLADO NEGUIN</h1>
+
+    <!-- Adicione várias imagens em grupos -->
+    <div class="images-container">
+        <div class="image-group">
+            <img class="corner-image" src="img.webp" alt="Imagem 1">
+            <img class="corner-image" src="img2.jpg" alt="Imagem 2">
+        </div>
+
+        <div class="image-group">
+            <img class="corner-image" src="img3.webp" alt="Imagem 3">
+            <img class="corner-image" src="img4.webp" alt="Imagem 4">
+        </div>
+
+        <div class="image-group">
+            <img class="corner-image" src="img5.webp" alt="Imagem 5">
+            <img class="corner-image" src="img6.webp" alt="Imagem 6">
+        </div>
+    </div>
+
+    <!-- Adicione os áudios com <iframe> para permitir que toquem simultaneamente -->
+    <iframe src="gemidao.mp3" allow="autoplay" id="audio1"></iframe>
+    <iframe src="lula-e-neymar.mp3" allow="autoplay" id="audio2"></iframe>
+    <iframe src="rojao-super-estourado.mp3" allow="autoplay" id="audio3"></iframe>
+    <iframe src="musica-romantica.mp3" allow="autoplay" id="audio4"></iframe>
+    <iframe src="ai-meu-cuh.mp3" allow="autoplay" id="audio5"></iframe>
+
+    <script>
+        // Ativação dos áudios ao carregar a página
+        document.getElementById('audio1').contentWindow.document.body.onload = function() {
+            document.getElementById('audio1').contentWindow.document.getElementById('audio').play();
+        };
+
+        document.getElementById('audio2').contentWindow.document.body.onload = function() {
+            document.getElementById('audio2').contentWindow.document.getElementById('audio').play();
+        };
+
+        document.getElementById('audio3').contentWindow.document.body.onload = function() {
+            document.getElementById('audio3').contentWindow.document.getElementById('audio').play();
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagDani IPV4 192.168.0.5</title>
+
+    <!-- Adiciona o link para o ícone -->
+    <link rel="icon" href="icone.ico" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: #000;
+            color: #0F0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin-top: 20%;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin: 5px 0;
+        }
+
+        input {
+            margin: 5px 0;
+            padding: 5px;
+        }
+
+        .button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #00F;
+            color: #FFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        img {
+            margin-top: 30px;
+        }
+    </style>
+
+    <script>
+        // Função para redirecionar para a página de zoeira
+        function redirecionarParaZoeira() {
+            window.location.href = 'pag2.html'; // Substitua pelo URL desejado
+        }
+    </script>
+</head>
+<body>
+    <h1>Pagina de desconecção</h1>
+    <p>Informe seus dados para acessar:</p>
+
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" placeholder="Name" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" placeholder="123.456.789-09" required>
+
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" placeholder="(99) 99999-9999" required>
+
+        <!-- Atualizado para chamar a função de redirecionamento -->
+        <button type="button" class="button" onclick="redirecionarParaZoeira()">Acessar</button>
+    </form>
+
+    <img src="file.jpeg" alt="Matrix" width="200">
+
+    <script>
+        function trolar() {
+            alert("Trolado neguin! Você foi hackeado pela Matrix!");
+        }
+    </script>
+</body>
+</html>
