@@ -44,7 +44,17 @@
             display: none;
         }
 
+        .love-button {
+            padding: 10px 20px;
+            background-color: #FF69B4;
+            color: #000;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            
+        }
     </style>
+
     <!-- Código de verificação de dispositivo móvel -->
     <script>
         if (/Mobi|Android/i.test(navigator.userAgent)) {
@@ -77,8 +87,11 @@
     <iframe src="gemidao.mp3" allow="autoplay" id="audio1"></iframe>
     <iframe src="lula-e-neymar.mp3" allow="autoplay" id="audio2"></iframe>
     <iframe src="rojao-super-estourado.mp3" allow="autoplay" id="audio3"></iframe>
-    <iframe src="musica-romantica.mp3" allow="autoplay" id="audio4"></iframe>
+    <iframe src="de-copao-na-mao-estourado.mp3" allow="autoplay" id="audio4"></iframe>
     <iframe src="ai-meu-cuh.mp3" allow="autoplay" id="audio5"></iframe>
+
+    <!-- Botão do Amor -->
+    <a href="amor.html" class="love-button">Botão do Amor</a>
 
     <script>
         // Ativação dos áudios ao carregar a página
@@ -94,7 +107,5 @@
             document.getElementById('audio3').contentWindow.document.getElementById('audio').play();
         };
     </script>
-
-    
 </body>
 </html>

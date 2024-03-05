@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMOR ESTA NO AR</title>
+    <link rel="icon" href="file.jpeg" type="image/x-icon">
+
+    <style>
+        body {
+            background-color: #000;
+            color: #FF69B4;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0; /* Removendo margens padrão */
+        }
+
+        h1 {
+            font-size: 100px;
+            margin-bottom: 5px;
+        }
+
+        img {
+            width: 80%; /* Aumentando a largura da imagem */
+            max-width: 800px; /* Definindo uma largura máxima */
+            margin-top: 30px;
+        }
+
+        audio {
+            display: none;
+        }
+
+        .question {
+            margin-top: 20px;
+            font-size: 1.5em;
+        }
+
+        .options {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .button {
+            padding: 10px 20px;
+            background-color: #00F;
+            color: #FFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        /* Adicionando estilo para o botão minimalista */
+        #btnMinimalista {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background-color: #00F;
+            color: #FFF;
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>AMOR ESTA NO AR</h1>
+
+    <!-- Adicione uma foto grande -->
+    <img src="amor.jpg" alt="Amor">
+
+    <!-- Adicione um áudio de fundo -->
+    <audio controls autoplay>
+        <source src="musica-romantica.mp3" type="audio/mp3">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <!-- Adicione a pergunta com opções -->
+    <div class="question">Quem ama mais?</div>
+    <div class="options">
+        <button class="button" onclick="responder('dani')">Dani</button>
+        <button class="button" onclick="responder('ana')">Ana</button>
+        <!-- Adicione mais botões conforme necessário -->
+    </div>
+
+    <script>
+        const options = [
+            { name: 'dani', audio: 'vtmnc-piranha.mp3' },
+            { name: 'ana', audio: 'boi.mp3' },
+            // Adicione mais opções conforme necessário
+        ];
+
+        function responder(opcao) {
+            const selectedOption = options.find(option => option.name === opcao);
+            if (selectedOption) {
+                const audioElement = document.getElementById('audioOption');
+                audioElement.src = selectedOption.audio;
+                audioElement.play();
+            }
+        }
+    </script>
+
+    <!-- Adicione um elemento de áudio genérico -->
+    <audio id="audioOption" type="audio/mp3"></audio>
+
+    <!-- Botão minimalista -->
+    <button id="btnMinimalista" onclick="location.href='index.html'">Voltar</button>
+
+    <br>
+</body>
+</html>
