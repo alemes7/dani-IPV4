@@ -51,7 +51,11 @@
         }
     </style>
     <!-- Código de verificação de dispositivo móvel -->
-
+    <script>
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            window.location.href = 'mobile-error.html';
+        }
+    </script>
 
     <script>
         // Função para redirecionar para a página de zoeira
