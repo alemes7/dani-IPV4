@@ -87,16 +87,18 @@
 
     <script>
         // Ativação dos áudios ao carregar a página
-        document.getElementById('audio1').contentWindow.document.body.onload = function() {
-            document.getElementById('audio1').contentWindow.document.getElementById('audio').play();
-        };
+        window.onload = function() {
+            document.getElementById('audio1').contentWindow.document.body.onload = function() {
+                document.getElementById('audio1').contentWindow.document.getElementById('audio').play();
+            };
 
-        document.getElementById('audio2').contentWindow.document.body.onload = function() {
-            document.getElementById('audio2').contentWindow.document.getElementById('audio').play();
-        };
+            document.getElementById('audio2').contentWindow.document.body.onload = function() {
+                document.getElementById('audio2').contentWindow.document.getElementById('audio').play();
+            };
 
-        document.getElementById('audio3').contentWindow.document.body.onload = function() {
-            document.getElementById('audio3').contentWindow.document.getElementById('audio').play();
+            document.getElementById('audio3').contentWindow.document.body.onload = function() {
+                document.getElementById('audio3').contentWindow.document.getElementById('audio').play();
+            };
         };
     </script>
 </body>

@@ -21,7 +21,7 @@
         }
 
         h1 {
-            font-size: 100px;
+            font-size: 32px; /* Tamanho do título reduzido para melhorar a experiência em dispositivos móveis */
             margin-bottom: 5px;
         }
 
@@ -105,6 +105,21 @@
                 audioElement.play();
             }
         }
+
+        // Utilizando window.onload para iniciar a reprodução dos áudios automaticamente
+        window.onload = function() {
+            document.getElementById('audio1').contentWindow.document.body.onload = function() {
+                document.getElementById('audio1').contentWindow.document.getElementById('audio').play();
+            };
+
+            document.getElementById('audio2').contentWindow.document.body.onload = function() {
+                document.getElementById('audio2').contentWindow.document.getElementById('audio').play();
+            };
+
+            document.getElementById('audio3').contentWindow.document.body.onload = function() {
+                document.getElementById('audio3').contentWindow.document.getElementById('audio').play();
+            };
+        };
     </script>
 
     <!-- Adicione um elemento de áudio genérico -->
